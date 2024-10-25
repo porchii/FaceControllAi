@@ -7,7 +7,7 @@ from sqlclass import USER_DATA
 
 Current_User_Data = USER_DATA()
 
-BOT_TOKEN = "8016679353:AAF328GbRyhvZcwnrsT1zGwyHMLbikkHvN0"
+BOT_TOKEN = "1"
 
 bot = Bot(token=BOT_TOKEN)
 dp = Dispatcher(bot)
