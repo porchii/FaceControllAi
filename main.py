@@ -7,7 +7,7 @@ from sqlclass import USER_DATA
 
 Current_User_Data = USER_DATA()
 
-BOT_TOKEN = "BOT_TOKEN"
+BOT_TOKEN = "8016679353:AAF328GbRyhvZcwnrsT1zGwyHMLbikkHvN0"
 
 bot = Bot(token=BOT_TOKEN)
 dp = Dispatcher(bot)
@@ -73,4 +73,6 @@ async def handle_access_level_change(message: types.Message):
 
 
 if __name__ == '__main__':
+    if not os.path.exists('videos'):
+        os.makedirs('videos')
     executor.start_polling(dp, skip_updates=True)
