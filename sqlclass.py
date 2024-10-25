@@ -53,7 +53,7 @@ class USER_DATA:
             conn.commit()
             return updated_count
 
-    def get_user_count(self):
+    def get_size(self):
         with sqlite3.connect(self.db_path) as conn:
             cursor = conn.cursor()
             cursor.execute('SELECT COUNT(*) FROM User_Data')
